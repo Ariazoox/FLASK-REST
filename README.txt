@@ -12,7 +12,7 @@ Instructions pour pouvoir lancer le code:
 
 - Installer PyCharm (version 2023.1.3 de préfèrence).
 - Installer Postman.
-- Télécharger le contenu du repository git suivant: 
+- Télécharger le contenu du repository git suivant: https://github.com/Ariazoox/FLASK-REST.git
 - Extraire le dossier "FLASK-REST" dans votre bureau ou dans n'importe quel dossier.
 - Lancer PyCharm, séléctionner "Open" puis ouvrez le dossier "FLASK-REST".
 - Vous aurez un message automatique de PyCharm pour installer un intérprète Python, cliquez sur "Install".
