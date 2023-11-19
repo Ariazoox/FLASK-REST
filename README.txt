@@ -16,7 +16,7 @@ Instructions pour pouvoir lancer le code:
 - Extraire le dossier "FLASK-REST" dans votre bureau ou dans n'importe quel dossier.
 - Lancer PyCharm, séléctionner "Open" puis ouvrez le dossier "FLASK-REST".
 - Vous aurez un message automatique de PyCharm pour installer un intérprète Python, cliquez sur "Install".
-- Vous aurez ensuite un autre message pour installer les requirements donc encore une fois, cliquez sur "Install" (sinon vous ouvre le "Terminal" en bas puis vous collez la commande suivante: pip install -r requirements.txt.
+- Vous aurez ensuite un autre message pour installer les requirements donc encore une fois, cliquez sur "Install" (sinon vous ouvrez le "Terminal" en bas puis vous collez la commande suivante: pip install -r requirements.txt.
 - Vous pourrez ensuite lancer chaque service en appuyant sur "Run" en haut à droite.
 - Cliquez sur le lien que vous affichera la console en bas à gauche puis copiez l'adresse du lien.
 - Lancez Postman > Appuyez sur "New" > HTTP > collez le lien dans la barre qui s'affichera.
