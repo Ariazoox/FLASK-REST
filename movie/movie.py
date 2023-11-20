@@ -8,7 +8,7 @@ app = Flask(__name__)
 PORT = 3200
 HOST = 'localhost'
 
-with open('{}/databases/movies.json'.format("."), "r") as jsf:
+with open('{}/data/movies.json'.format("."), "r") as jsf:
    movies = json.load(jsf)["movies"]
 
 # Point d'entrée renvoyant à la page d'accueil "Welcome to the Movie service!"
