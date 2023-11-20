@@ -24,6 +24,7 @@ def template():
 # point d'entrée qui affiche l'intégralité des movies de notre fichier movies.json
 @app.route("/json", methods=['GET'])
 def get_json():
+    # Renvoie la liste des movies 
     res = make_response(jsonify(movies), 200)
     return res
 
@@ -35,6 +36,7 @@ def get_movie_byid(movieid):
         # Vérification de l'existence de l'id donné en paramètre dans movies.json
         if str(movie["id"]) == str(movieid):
             res = make_response(jsonify(movie),200)
+            # Renvoie les informations du movie dont l'id a été donné en paramètre
             return res
     # Message d'erreur si l'ID n'existe pas
     return make_response(jsonify({"error":"Movie ID not found"}),400)
@@ -55,6 +57,7 @@ def get_movie_bytitle():
         # Message d'erreur si le titre est inexistant
         res = make_response(jsonify({"error":"movie title not found"}),400)
     else:
+        # Renvoie le movie dont le titre a été donné en paramètre
         res = make_response(jsonify(json),200)
     return res
 
@@ -83,6 +86,7 @@ def update_movie_rating(movieid, rate):
             # Mise à jour du rating
             movie["rating"] = float(rate)
             res = make_response(jsonify(movie),200)
+            # Affiche le film mis à jour avec son rating
             return res
     # Message d'erreur si l'ID n'existe pas
     res = make_response(jsonify({"error":"movie ID not found"}),201)
