@@ -18,6 +18,7 @@ def home():
 # point d'entrée qui affiche l'intégralité des schedules de notre fichier times.json
 @app.route("/showtimes", methods=['GET'])
 def get_shedule():
+    # Renvoie les résérvations
     res = make_response(jsonify(schedule), 200)
     return res
 
@@ -29,6 +30,7 @@ def get_movies_bydate(date):
         # Vérification de l'éxistence de la date dans le fichier times.json
         if str(showtime["date"]) == str(date):
             res = make_response(jsonify(showtime),200)
+            # Renvoie les films d'une date donnée en paramètre
             return res
         # Message d'erreur si la date n'existe pas
         return make_response(jsonify({"error":"Date not found"}),400)
