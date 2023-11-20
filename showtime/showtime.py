@@ -7,7 +7,7 @@ app = Flask(__name__)
 PORT = 3202
 HOST = 'localhost'
 
-with open('{}/databases/times.json'.format("."), "r") as jsf:
+with open('{}/data/times.json'.format("."), "r") as jsf:
    schedule = json.load(jsf)["schedule"]
 
 # Point d'entrée renvoyant à la page d'accueil "Welcome to the Showtime service!"
