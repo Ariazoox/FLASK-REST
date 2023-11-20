@@ -30,6 +30,7 @@ def get_booking_for_user(userid):
         # Vérification de la correspondance de l'ID donné avec les ID du fichier bookings.json
         if str(booking["userid"]) == str(userid):
             res = make_response(jsonify(booking),200)
+            # Renvoie les résérvations de l'utilisateur dont on a donné l'ID en paramètre
             return res
     # Message d'erreur si les ID ne correspondent pas
     return make_response(jsonify({"error":"User ID not found"}),400)
@@ -71,13 +72,14 @@ def add_booking_byuser(userid):
                         }
                     )
                     return make_response(jsonify(booking), 200)
-            # On consifère que le user ID est valide
+            # On considère que le user ID est valide
             bookings.append(
                 {
                     "userid": userid,
                     "dates": [{"date": data["date"], "movies": [data["movieid"]]}],
                 }
             )
+            # On rajoute cette résérvation pour l'utilisateur donné
             return make_response(jsonify(bookings[-1]), 200)
 
     return make_response(
