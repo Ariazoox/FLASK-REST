@@ -22,6 +22,7 @@ def home():
 @app.route("/users", methods=['GET'])
 def get_json():
     res = make_response(jsonify(users), 200)
+    # Renvoie la liste des users
     return res
 
 # point d'entrée pour afficher un utilisateur selon son ID
@@ -32,6 +33,7 @@ def get_user_byid(userid):
         # Vérification de la correspondance des ID
         if str(user["id"]) == str(userid):
             res = make_response(jsonify(user),200)
+            # Renvoie le user avec l'ID renseigné
             return res
     # Message d'erreur au cas où l'ID serait inexistant
     return make_response(jsonify({"error":"User ID not found"}),400)
@@ -54,6 +56,7 @@ def get_user_bookings(userid):
 
             mapped_movies.append({"director" : moviedirector})
         date_item["movies"] = mapped_movies
+    # Renvoie les résérvations de l'utilisateur dont l'ID a été renseigné
     return make_response(jsonify(booking), res.status_code)
 
 if __name__ == "__main__":
