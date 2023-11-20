@@ -1,12 +1,12 @@
 Réalisations dans le TP FLASK,REST et OpenAPI:
 
-Création de plusieurs points d'entrée commentés dans le service Movie permettant la réalisation de différents actions (Ajouts,Suppressions,Mises à jour,Affichage) à l'aide de plusieurs méthodes (GET,POST,PUT,DELETE) le tout en manipulant les données présentes dans le fichier "movies.json" faisant office de base de données.
+- Création de plusieurs points d'entrée commentés dans le service Movie permettant la réalisation de différents actions (Ajouts,Suppressions,Mises à jour,Affichage) à l'aide de plusieurs méthodes (GET,POST,PUT,DELETE) le tout en manipulant les données présentes dans le fichier "movies.json" faisant office de base de données.
 
-Création des points d'entrée commentés cette fois pour le service Showtime qui serviront à obtenir le programme des films prévus pour une date renseignée le tout en utilisant les données cette fois ci du fichier "times.json".
+- Création des points d'entrée commentés cette fois pour le service Showtime qui serviront à obtenir le programme des films prévus pour une date renseignée le tout en utilisant les données cette fois ci du fichier "times.json".
 
-Création des points d'entrée commentés pour le service Booking qui auront pour objectif d'afficher les résérvations des films des utilisateurs, d'afficher les résérvations d'un seul utilisateur et d'ajouter pour un utilisateur donné, une résérvation pour un film à une certaine date fixée.
+- Création des points d'entrée commentés pour le service Booking qui auront pour objectif d'afficher les résérvations des films des utilisateurs, d'afficher les résérvations d'un seul utilisateur et d'ajouter pour un utilisateur donné, une résérvation pour un film à une certaine date fixée.
 
-Création des points d'entrée commentés pour le service User pour pouvoir afficher les utilisateurs du fichier users.json ou un seul utilisateur grâce à son ID donné en paramètre. Dans le service User, le dernier point d'entrée permet d'appeler à la fois le service booking et movie pour pouvoir afficher toutes les résérvations d'un seul utilisateur donné.
+- Création des points d'entrée commentés pour le service User pour pouvoir afficher les utilisateurs du fichier users.json ou un seul utilisateur grâce à son ID donné en paramètre. Dans le service User, le dernier point d'entrée permet d'appeler à la fois le service booking et movie pour pouvoir afficher toutes les résérvations d'un seul utilisateur donné.
 
 Instructions pour pouvoir lancer le code:
 
