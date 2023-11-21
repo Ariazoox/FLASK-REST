@@ -8,7 +8,7 @@ app = Flask(__name__)
 PORT = 3203
 HOST = 'localhost'
 
-with open('{}/data/users.json'.format("."), "r") as jsf:
+with open('{}/databases/users.json'.format("."), "r") as jsf:
    users = json.load(jsf)["users"]
    print(users)
 
