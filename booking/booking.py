@@ -8,7 +8,7 @@ app = Flask(__name__)
 PORT = 3201
 HOST = 'localhost'
 
-with open('{}/data/bookings.json'.format("."), "r") as jsf:
+with open('{}/databases/bookings.json'.format("."), "r") as jsf:
    bookings = json.load(jsf)["bookings"]
 
 # Point d'entrée renvoyant à la page d'accueil "Welcome to the Booking service!"
